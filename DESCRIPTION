@@ -1,12 +1,12 @@
 Package: koiplot
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Artistic-looking Scatterplots
 Version: 0.1
 Date: 2017-02-09
 Author: Richard Vale
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Maintainer: Richard Vale <rtrvale@gmail.com>
+Description: Produces scatteplots that look like paintings
+License: MIT + file LICENSE
 LazyData: TRUE
 RoxygenNote: 5.0.1
 Suggests: knitr,
