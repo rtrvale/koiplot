@@ -132,7 +132,7 @@ koiplot <- function(x, y, nmax=10000, ...){
   args$nmax <- nmax
 
   # warning message about col
-  if (!is.null(args$col)){
+  if (!is.null(args[["col"]])){
     cat("Warning in koiplot(): the col argument does nothing. To specify colours, use cols\n")
   }
 
