@@ -77,7 +77,7 @@ prepare_plot_data <- function(x,
     colour_column <- cols
     colour_column <- as.factor(colour_column)
     num_colours <- length(levels(colour_column))
-    cols <- rainbow(num_colours)[as.numeric(colour_column)]
+    cols <- rainbow(num_colours, start=0, end=0.9)[as.numeric(colour_column)]
     cols <- rgb(t((1/2)*(col2rgb(cols)/255 + 1)))
     # should pastelize these as well
   }

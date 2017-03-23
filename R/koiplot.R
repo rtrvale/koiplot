@@ -6,6 +6,8 @@
 #' @param y either a vector of the same length as x, or ignored if x is a data
 #' frame
 #' @param nmax maximum number of rows/entries of x to be plotted
+#' @param add if TRUE, add this plot over current plot (not recommended because
+#' the new plot will automatically be on top, but sometimes useful)
 #' @param ... extra optional arguments
 #' @details This function exists to make it possible to plot a data frame quickly without
 #' additional arguments if desired.
@@ -51,7 +53,7 @@
 #' koiplot(x,y,angle=z,cols=w,alpha=0.2,width=2, height=1, curvature=0.1,
 #'         bty="n",xlab="", ylab="",xaxt="n",yaxt="n")
 #' @export
-koiplot <- function(x, y, nmax=10000, ...){
+koiplot <- function(x, y, nmax=10000, add=F, ...){
 
   # to do : make nmax also work with the case when x and y are
   # not data frames
@@ -130,6 +132,7 @@ koiplot <- function(x, y, nmax=10000, ...){
   }
 
   args$nmax <- nmax
+  args$add <- add
 
   # warning message about col
   if (!is.null(args[["col"]])){

@@ -2,6 +2,7 @@
 
 export(brushstroke)
 export(choose_plot_columns)
+export(gallery)
 export(koiplot)
 export(koiplotxy)
 export(prepare_plot_data)

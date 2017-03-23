@@ -48,6 +48,7 @@ choose_plot_columns <- function(X,
   names_y <- names(X)[which(numeric_cols)[2]]
 
   if (trace){
+    cat("Default choices of columns to be plotted:\n")
     cat("x: ", names(X)[which(numeric_cols)[1]], "\n", sep="")
     cat("y: ", names(X)[which(numeric_cols)[2]], "\n", sep="")
   }

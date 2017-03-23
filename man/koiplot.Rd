@@ -4,7 +4,7 @@
 \alias{koiplot}
 \title{Plot a Dataframe or pair of vectors}
 \usage{
-koiplot(x, y, nmax = 10000, ...)
+koiplot(x, y, nmax = 10000, add = F, ...)
 }
 \arguments{
 \item{x}{either a vector or a data frame}
@@ -13,6 +13,9 @@ koiplot(x, y, nmax = 10000, ...)
 frame}
 
 \item{nmax}{maximum number of rows/entries of x to be plotted}
+
+\item{add}{if TRUE, add this plot over current plot (not recommended because
+the new plot will automatically be on top, but sometimes useful)}
 
 \item{...}{extra optional arguments}
 }

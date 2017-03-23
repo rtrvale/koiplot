@@ -7,7 +7,7 @@
 koiplotxy(x, y, angle = NULL, alpha = 0.1, cols = "blue", width = NULL,
   height = NULL, curvature = NULL, rescale_angles = T, min_angle = -45,
   max_angle = 45, brushstroke_xnoise = NULL, brushstroke_ynoise = NULL,
-  brushstroke_border_col = NA, nmax = 10000, ...)
+  brushstroke_border_col = NA, nmax = 10000, add = F, ...)
 }
 \arguments{
 \item{x}{vector of x-coordinates}
@@ -36,6 +36,8 @@ koiplotxy(x, y, angle = NULL, alpha = 0.1, cols = "blue", width = NULL,
 
 \item{nmax}{maximum number of brushstrokes to be drawn (defaults to 10000 as more
 becomes slow)}
+
+\item{add}{if TRUE, don't draw a new plot (not recommended)}
 
 \item{...}{extra arguments to plot() such as xlim, ylim, xaxt, title etc.}
 

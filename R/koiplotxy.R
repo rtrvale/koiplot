@@ -16,6 +16,7 @@
 #' @param brushstroke_border_col ditto border colours
 #' @param nmax maximum number of brushstrokes to be drawn (defaults to 10000 as more
 #' becomes slow)
+#' @param add if TRUE, don't draw a new plot (not recommended)
 #' @param ... extra arguments to plot() such as xlim, ylim, xaxt, title etc.
 #' @details The arguments are passed to prepare_plot_data(). Then nmax random values from x #' and y are chosen
 #' for plotting. Then a plot is made and the brushstrokes are added using brushstroke().
@@ -43,6 +44,7 @@ koiplotxy <- function(x,
                       brushstroke_ynoise=NULL,
                       brushstroke_border_col=NA,
                       nmax=10000,
+                      add=F,
                       ...){
 
   # function for plotting raw data
@@ -83,7 +85,8 @@ koiplotxy <- function(x,
     assign(name, plot_data[name][[1]])
   }
 
-  plot(x,y, type="n", ...)
+  if (!add) plot(x,y, type="n", ...)
+
   usr <- par("usr")
   xstretch = usr[2] - usr[1]
   ystretch = usr[4] - usr[3]
