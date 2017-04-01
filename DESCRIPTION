@@ -1,7 +1,7 @@
 Package: koiplot
 Type: Package
 Title: Artistic-looking Scatterplots
-Version: 0.1
+Version: 0.0.1
 Date: 2017-02-09
 Author: Richard Vale
 Maintainer: Richard Vale <rtrvale@gmail.com>

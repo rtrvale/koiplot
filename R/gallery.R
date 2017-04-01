@@ -18,7 +18,7 @@ if (what == "spiral" | what == ""){
           ylim=5e7*c(-1,1), main="spiral")
   }
 
-if (what == "the_unblinking_eye" | what == ""){
+if (what == "eye" | what == ""){
 # the unblinking eye
   x <- rnorm(1000)
   y <- rnorm(1000)
@@ -26,7 +26,7 @@ if (what == "the_unblinking_eye" | what == ""){
   koiplot(x,y, cols=grey((1000:1)/1000)[as.factor(x^2+y^2)],
         angle=rnorm(1000), rescale_angles=F,
         alpha=0.02, curvature=0.3, xlim=c(-3,3), ylim=c(-3,3),
-        main = "the_unblinking_eye")
+        main = "eye")
 
   koiplot(x/1.6,y/1.6, cols=rainbow(1000,0.9)[as.factor(x^2+y^2)],
         angle=rnorm(1000),

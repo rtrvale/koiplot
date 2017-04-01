@@ -15,5 +15,5 @@ The koiplot package produces scatterplots in which points are replaced by decora
 
 You can get an idea of the package by running `example(koiplot)` or read the full user guide at the following link:
 
-http://rtrvale.github.io/pages/koiplot.html
+http://rtrvale.github.io/koiplot/koiplot.html
 
